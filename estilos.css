@@ -10,6 +10,28 @@ body {
     background-attachment: fixed;
 }
 
+/*Video de fondo de la pagina*/
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/*Capa para mejorar la lectura del contenido*/
+.capa-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+
 /*El color de la barra de navegacion y distancia*/
 .navbar {
     background: #c62828;
