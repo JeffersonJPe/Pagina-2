@@ -1,0 +1,232 @@
+/*El color de la pagina*/
+body {
+    background-color: #fff8f0;
+    color: #3b1710;
+    font-family: Arial, sans-serif;
+
+    /*La imagen de fondo de la pagina*/
+   
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*El color de la barra de navegacion y distancia*/
+.navbar {
+    background: #c62828;
+}
+
+/*Tamaño y grosor del nombre de la pagina*/
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*Color y espacio de los enlaces*/
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: .3s;
+}
+
+/*Cambia el color de los enlaces*/
+.navegacion a:hover {
+    background: #f57c00;
+    border-radius: 5px;
+}
+
+/*Caja donde esta la historia*/
+.historia {
+    background: #c62828;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    min-height: 390px;
+    animation: aparecer 1s;
+}
+
+/*Color de los titulos*/
+.historia h2,
+.formulario h2,
+footer h3 {
+    color: #080808;
+}
+
+/*Ordena el texto de la historia*/
+.historia p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/*Caja donde esta el carrusel*/
+.carousel {
+    border-radius: 8px;
+    overflow: hidden;
+    animation: aparecer 1s;
+}
+
+/*Tamaño de las imagenes del carrusel*/
+.carousel img {
+    height: 455px;
+    object-fit: cover;
+    opacity: .85;
+}
+
+/*Hace mas grandes las imagenes cuando pasa el mouse*/
+.imagen:hover,
+.tarjeta img:hover,
+.carousel img:hover {
+    transform: scale(1.08);
+    transition: .3s;
+}
+
+/*Caja del texto que aparece en el carrusel*/
+.carousel-caption {
+    background: #c62828cc;
+    border-radius: 6px;
+}
+
+/*Tamaño de la imagen de informacion*/
+.imagen {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: .85;
+    animation: aparecer 1s;
+}
+
+/*Tamaño de la letras en todos los parrafos*/
+p{
+    font-size: 25px;
+}
+/*Caja donde esta el texto de informacion*/
+.texto {
+    background: #fbc02d;
+    padding: 25px;
+    border-radius: 8px;
+    min-height: 300px;
+    animation: aparecer 1s;
+}
+
+/*Caja del titulo de las mejores pizzerias*/
+.titulo {
+    background: #c62828;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    animation: bajar 1s;
+}
+
+/*Diseño de las tarjetas*/
+.tarjeta {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: aparecer 1s;
+}
+
+/*Tamaño de las imagenes de las tarjetas*/
+.tarjeta img {
+    height: 200px;
+    object-fit: cover;
+    opacity: .85;
+}
+
+/*Color de los nombres de las pizzas*/
+.card-title {
+    color: #c62828;
+}
+/*video*/
+.video-preparacion{
+    width:  100%;
+    
+}
+video{
+
+    width:  100%;
+    height: 300px;
+}
+/*Caja donde esta el formulario*/
+.formulario {
+    background: #fbc02d;  
+    padding: 25px;
+    border-radius: 8px;
+    animation: aparecer 1s;
+}
+
+/*Color del boton*/
+.boton {
+    background: #c62828;
+    color: white;
+}
+
+/*Cambia el color del boton*/
+.boton:hover {
+    background:#f57c00;
+    color: #3b1710;
+}
+
+/*Caja del final de la pagina*/
+footer {
+    background: #c62828;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/*Color del boton para volver al inicio*/
+.inicio {
+    color: #fbc02d;
+    text-decoration: none;
+    transition: .3s;
+}
+
+/*Cambia el color del boton inicio*/
+.inicio:hover {
+    color: white;
+}
+
+/*Primera animacion de la pagina*/
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Segunda animacion de la pagina*/
+@keyframes bajar {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Cambia la pagina para celulares*/
+@media (max-width: 768px) {
+
+    /*Ordena los enlaces cuando la pantalla es pequeña*/
+    .navegacion {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    /*Reduce el tamaño del carrusel*/
+    .carousel img {
+        height: 280px;
+    }
+}
